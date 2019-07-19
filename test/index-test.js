@@ -35,6 +35,7 @@ describe('<CoordinatesButton />', () => {
 
   it('should call the callback prop when the button is clicked', () => {
     wrapper.find('button').simulate('click', MOCKED_EVENT);
+    debugger
     expect(spy.firstCall.args[0]).to.be.an('array');
   });
 
