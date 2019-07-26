@@ -5,10 +5,11 @@ import ReactDOM from 'react-dom'
 class CoordinatesButton extends React.Component{
 
   clickHandle = (event) => {
-    // console.log(event.cordinateX)
-    const coordinates = [event.cordinateX, event.cordinateY]
+    // console.log(event.clientY)
+    const coordinates = [event.clientX, event.clientY]
     this.props.onReceiveCoordinates(coordinates)
   }
+
   render(){
     return (
       <div>
